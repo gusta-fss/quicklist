@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicklist</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header class="desktop-only">
+            <img src="assets/logo.svg" alt="logo da quicklist">
+        </header>
+
+        <section id="input-item">
+            <header>
+                <a href="#"><img src="assets/back.svg" alt="icone de voltar"></a>
+                <h1>Compras da semana</h1>
+            </header>
+
+            <form action="">
+                <input type="text" name="value" id="value" placeholder="Adicione um novo item">
+                <button type="submit">Adicionar item</button>
+            </form>
+        </section>
+
+        <section id="list-items">
+            <ul role="list">
+                <li>
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-img"></div>
+                        <input type="checkbox" name="item" id="item">
+                        <label for="item">Pão de forma</label>
+                        <img class="delete-item" src="assets/icons/garbage.svg" alt="remover item">
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-img"></div>
+                        <input type="checkbox" name="item" id="item">
+                        <label for="item">Café preto</label>
+                        <img class="delete-item" src="assets/icons/garbage.svg" alt="remover item">
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-img"></div>
+                        <input type="checkbox" name="item" id="item">
+                        <label for="item">Suco de laranja</label>
+                        <img class="delete-item" src="assets/icons/garbage.svg" alt="remover item">
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox-img"></div>
+                        <input type="checkbox" name="item" id="item">
+                        <label for="item">Bolacha</label>
+                        <img class="delete-item" src="assets/icons/garbage.svg" alt="remover item">
+                    </div>
+                </li>
+            </ul>
+
+            <div id="alert">
+                <img src="assets/icons/alert.svg" alt="icone de alerta">
+                <p>O item foi removido da lista</p>
+                <img class="delete-alert" src="assets/icons/delete.svg" alt="remover alerta">
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
